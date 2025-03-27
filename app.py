@@ -27,7 +27,7 @@ def init_db():
     conn.commit()
     return "Database initialized with sample products."
 
-# Vulnerable version (testupdate2)
+# Vulnerable version (testupdate3)
 @app.route('/search_vulnerable', methods=['GET', 'POST'])
 def search_vulnerable():
     if request.method == 'POST':
